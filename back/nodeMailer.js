@@ -1,6 +1,5 @@
 import nodemailer from "nodemailer"
 import dotenv from "dotenv"
-import { error } from "console";
 
 dotenv.config()
 
@@ -8,7 +7,6 @@ export default async function () {
 
     const transporter = nodemailer.createTransport({
         service: process.env.SERVICE,
-        host: '/',
         auth: {
           user: process.env.EMAIL_FROM,
           pass: process.env.EMAIL_PASS,

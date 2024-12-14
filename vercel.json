@@ -1,7 +1,7 @@
 {
 
     "functions": {
-        "api/sla": {
+        "back/sla": {
             "runtime": "@vercel/node"
         }
     },
@@ -9,7 +9,7 @@
     "rewrites": [
         {
           "source": "/sla",
-          "destination": "/api/sla"
+          "destination": "/back/sla"
         }
     ]
 }

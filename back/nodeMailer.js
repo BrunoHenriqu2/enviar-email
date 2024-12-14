@@ -1,9 +1,8 @@
 import nodemailer from "nodemailer"
 import dotenv from "dotenv"
 
-dotenv.config()
-
-export default async function () {
+export default async function sendEmail() {
+    dotenv.config()
 
     const transporter = nodemailer.createTransport({
         service: process.env.SERVICE,

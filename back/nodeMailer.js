@@ -17,10 +17,12 @@ export default async function sendEmail() {
         to: process.env.EMAIL_TO,
         subject: "Message title",
         text: "Plaintext version of the message",
-        html: "<p>HTML version of the message</p>",
+        html: "<h1>HTML version of the message</h1>",
     }
 
     transporter.sendMail(mailOptions, (error) => {
         console.log(error)
     })
+
+    return console.log("Email enviado!")
 }

@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/info",
-            "destination": "/back/sla.js"
+            "destination": "https://youtube.com"
         }
     ]
 }

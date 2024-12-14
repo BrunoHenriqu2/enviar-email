@@ -1,9 +1,20 @@
 import nodemailer from "nodemailer"
 import dotenv from "dotenv"
+import { error } from "console";
 
 dotenv.config()
 
-export default async function sendEmail() {
+export default async function () {
+
+    const transporter = nodemailer.createTransport({
+        host: '/',
+        port: 587,
+        secure: false,
+        auth: {
+          user: process.env.EMAIL_FROM,
+          pass: process.env.EMAIL_PASS,
+        },
+      });
 
     const mailOptions = {
         from: process.env.EMAIL_FROM,
@@ -13,5 +24,7 @@ export default async function sendEmail() {
         html: "<p>HTML version of the message</p>",
     }
 
-    nodemailer.createTransport(mailOptions)
+    transporter.sendMail(mailOptions, (error) => {
+        console.log(error)
+    })
 }

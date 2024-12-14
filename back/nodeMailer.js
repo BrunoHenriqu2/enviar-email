@@ -7,9 +7,8 @@ dotenv.config()
 export default async function () {
 
     const transporter = nodemailer.createTransport({
+        service: process.env.SERVICE,
         host: '/',
-        port: 587,
-        secure: false,
         auth: {
           user: process.env.EMAIL_FROM,
           pass: process.env.EMAIL_PASS,

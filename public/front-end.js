@@ -1,5 +1,5 @@
 const button = document.body.querySelector("button#send")
 
 button.addEventListener("click", () => {
-    fetch("ver")
+    fetch("https://enviar-email-omega.vercel.app/")
 })

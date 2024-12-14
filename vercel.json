@@ -1,8 +1,8 @@
 {
     "rewrites": [
       {
-        "source": "/about",
-        "destination": "https://youtube.com"
+        "source": "/info",
+        "destination": ""
       }
     ]
   }

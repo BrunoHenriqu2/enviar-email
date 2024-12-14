@@ -2,7 +2,7 @@
 
     "functions": {
         "back/sla": {
-            "runtime": "@vercel/node"
+            "runtime": "@vercel/node@22"
         }
     },
 

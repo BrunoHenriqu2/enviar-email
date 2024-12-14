@@ -1,8 +1,15 @@
 {
+
+    "functions": {
+        "api/sla": {
+            "runtime": "@vercel/node"
+        }
+    },
+
     "rewrites": [
         {
-            "source": "/info",
-            "destination": "https://youtube.com"
+          "source": "/sla",
+          "destination": "/api/sla"
         }
     ]
 }

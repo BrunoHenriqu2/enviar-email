@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer"
 import dotenv from "dotenv"
 
-export default function sendEmail() {
+export default function sendEmail(req, res) {
     dotenv.config()
 
     const transporter = nodemailer.createTransport({

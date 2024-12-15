@@ -27,6 +27,6 @@ export default async function sendEmail(req, res) {
         res.status(200).json({ message: "Email enviado com sucesso!" });
     } catch (error) {
         console.error("Error sending email:", error);
-        res.status(500).json({ error: "falha no envio do email!." });
+        res.status(500).json({ error: "falha no envio do email!" });
     }
 }

@@ -10,7 +10,7 @@
 const button = document.body.querySelector("button#send");
 
 button.addEventListener("click", () => {
-    fetch("/info")
+    fetch("/sendEmail")
         .then(response => response.text())
         .then(data => console.log(data))
         .catch(error => console.error(error));

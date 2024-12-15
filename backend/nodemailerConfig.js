@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer"
 import dotenv from "dotenv"
 
-export default async function nodemailerConfig() {
+export default function nodemailerConfig() {
     dotenv.config()
 
     const transporter = nodemailer.createTransport({
@@ -20,9 +20,5 @@ export default async function nodemailerConfig() {
         html: "<h1>HTML version of the message</h1>",
     }
 
-    transporter.sendMail(mailOptions, (error) => {
-        console.log(error)
-    })
-
-    return console.log("Email enviado!")
+    transporter.sendMail(mailOptions)
 }

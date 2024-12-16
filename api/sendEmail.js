@@ -29,7 +29,7 @@ export default async function sendEmail(req, res) {
                 nome: ${name}
                 telefone: ${tel}
             `,
-            html: "<h1>HTML version of the message</h1>",
+            //html: "<h1>HTML version of the message</h1>",
         };
 
         // Aguarda o envio do e-mail

@@ -25,11 +25,12 @@ export default async function sendEmail(req, res) {
             from: process.env.EMAIL_FROM,
             to: process.env.EMAIL_TO,
             subject: "Nova Simulação!",
-            text: `
-                nome: ${name}
-                telefone: ${tel}
+            html: `
+            <h1>Resultado</h1>
+
+                <p>Nome: ${name}</p>
+                <p>Telefone: ${tel}</p>
             `,
-            //html: "<h1>HTML version of the message</h1>",
         };
 
         // Aguarda o envio do e-mail

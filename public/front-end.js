@@ -9,7 +9,7 @@
 
 let button = document.querySelector("button#send");
 let inputName = document.querySelector("input#name")
-let inputTel = document.querySelector("input#Tel")
+let inputTel = document.querySelector("input#tel")
 
 button.addEventListener("click", () => {
     fetch("/api/sendEmail", {

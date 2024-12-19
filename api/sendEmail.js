@@ -26,7 +26,7 @@ export default async function sendEmail(req, res) {
             to: process.env.EMAIL_TO,
             subject: `MANDARAM UM EMAIL PARA VOCÊ!!!`,
             html: `
-            <h1><s>Dados do Usuário</s></h1>
+            <h1>Dados do Usuário</h1>
 
                 <p>Nome: ${name}!</p>
                 <p>Telefone: ${tel}</p>

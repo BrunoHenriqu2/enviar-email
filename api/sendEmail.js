@@ -24,7 +24,7 @@ export default async function sendEmail(req, res) {
         const mailOptions = {
             from: process.env.EMAIL_FROM,
             to: process.env.EMAIL_TO,
-            subject: `${String.toUpperCase(name)} MANDOU UM EMAIL PARA VOCÊ!!!`,
+            subject: `MANDARAM UM EMAIL PARA VOCÊ!!!`,
             html: `
             <h1><s>Dados do Usuário</s></h1>
 

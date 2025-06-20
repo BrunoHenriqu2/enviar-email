@@ -49,7 +49,7 @@ export default async function sendEmail(req, res) {
             text-align: center;
             gap: 1rem;
             font-family: "Sansation";
-            background: linear-gradient(60deg, var(--blue), var(--light-blue) 100%);
+            background: linear-gradient(60deg, #005aa3, #5bbab4 100%);
         }
 
         h2 {
@@ -66,8 +66,8 @@ export default async function sendEmail(req, res) {
             border-radius: .25rem;
             width: 60%;
             min-height: 100dvh;
-            color: var(--mid-blue);
-            background-color: var(--cream-white);
+            color: #0172cf;
+            background-color: #fefff3;
         }
     </style>
 </head>
@@ -75,6 +75,10 @@ export default async function sendEmail(req, res) {
 <body>
     <main>
         <h1>Dados da Solicitação:</h1>
+        <h2>Nome</h2>
+        <h2>${name}</h2>
+        <h2>Telefone</h2>
+        <h2>${tel}</h2>
     </main>
 </body>
 

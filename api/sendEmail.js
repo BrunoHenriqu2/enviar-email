@@ -27,6 +27,7 @@ export default async function sendEmail(req, res) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa dos Sonhos - Formulário</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&family=WDXL+Lubrifont+TC&display=swap');
 
@@ -68,20 +69,12 @@ export default async function sendEmail(req, res) {
             color: var(--mid-blue);
             background-color: var(--cream-white);
         }
-
-        /* div {
-            background-color: rgb(2, 141, 255);
-        } */
     </style>
 </head>
 
 <body>
     <main>
         <h1>Dados da Solicitação:</h1>
-        <h2>Nome</h2>
-        <h2>${name}</h2>
-        <h2>Telefone</h2>
-        <h2>${tel}</h2>
     </main>
 </body>
 

@@ -77,6 +77,7 @@ export default async function sendEmail(req, res) {
             flex-direction: row;
             padding-top: 1.5rem;
             height: auto;
+            width: 100%;
         }
 
         .line {

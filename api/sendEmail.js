@@ -55,6 +55,7 @@ export default async function sendEmail(req, res) {
         }
 
         main {
+            float: left;
             text-align: center;
             border-radius: .25rem;
             width: 60%;
@@ -63,14 +64,10 @@ export default async function sendEmail(req, res) {
 
         img[alt="logo caixa aqui"] {
             border-radius: 0 1rem 0 1rem;
-            width: calc(164px / 1.35);
-            height: calc(96px / 1.35);
         }
 
         img[alt="dream house"] {
             border-radius: 1rem 0 1rem 0;
-            width: calc(164px / 1.4);
-            height: calc(111px / 1.4);
         }
 
         #logos {
@@ -78,7 +75,8 @@ export default async function sendEmail(req, res) {
             justify-content: center;
             gap: 1.5rem;
             flex-direction: row;
-            padding-top: 2rem;
+            padding-top: 1.5rem;
+            max-height: 4rem;
         }
 
         .line {
@@ -106,10 +104,10 @@ export default async function sendEmail(req, res) {
 <body>
     <main>
         <div id="logos">
-            <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/v1750614861/logo-caixa-aqui_kvv5bg.png"
+            <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/h_90,w_100/v1750614861/logo-caixa-aqui_kvv5bg.png"
                 alt="logo caixa aqui">
             <div class="line"></div>
-            <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/v1750614868/house_twnenq.jpg" alt="dream house">
+            <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/h_90,w_90/v1750614868/house_twnenq.jpg" alt="dream house">
         </div>
         <br>
         <h1>Dados da Solicitação:</h1>

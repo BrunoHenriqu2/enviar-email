@@ -93,12 +93,6 @@ export default async function sendEmail(req, res) {
             background-color: #e1e2da;
             border-radius: 1rem;
             text-align: center;
-            min-height: 10rem;
-        }
-
-        .question h1 {
-            position: relative;
-            top: 2rem;
         }
 
         @media (max-width: 950px) {

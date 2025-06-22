@@ -1,24 +1,4 @@
-import nodemailer from "nodemailer";
-
-export default async function sendEmail(req, res) {
-    
-    if (req.method !== "POST") {
-        return res.status(405).json({ error: "Metodo não permitido: " + req.method })
-    }
-
-    try {
-
-        const {name, tel} = req.body
-
-        const transporter = nodemailer.createTransport({
-            service: process.env.SERVICE,
-            auth: {
-                user: process.env.EMAIL_FROM,
-                pass: process.env.EMAIL_PASS,
-            },
-        })
-
-        let fullHTML = `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -130,32 +110,12 @@ export default async function sendEmail(req, res) {
             <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/v1750614868/house_twnenq.jpg" alt="dream house">
         </div>
         <h1>Dados da Solicitação:</h1>
+        <br>
         <div class="question">
-            <h1>Nome</h1>
-            <h2>${name}</h2>
-        </div>
-        <div class="question">
-            <h1>Telefone</h1>
-            <h2>${tel}</h2>
+            <h1>voce tem casa bosta?</h1>
+            <h2>Sim</h2>
         </div>
     </main>
 </body>
 
-</html>`
-
-        const mailOptions = {
-            from: process.env.EMAIL_FROM,
-            to: process.env.EMAIL_TO,
-            subject: `MANDARAM UM EMAIL PARA VOCÊ!!!`,
-            html: fullHTML,
-        }
-
-        // Aguarda o envio do e-mail
-        await transporter.sendMail(mailOptions);
-
-        res.status(200).json({ message: "Email enviado com sucesso!" })
-    } catch (error) {
-        console.error("ocorreu um erro enviando o email: ", error)
-        res.status(500).json({ error: "falha no envio do email!" })
-    }
-}
+</html>

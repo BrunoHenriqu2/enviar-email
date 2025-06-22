@@ -1,5 +1,13 @@
 body {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    gap: 1rem;
+}
+
+input, button {
+    width: 50%;
+    height: 2rem;
 }

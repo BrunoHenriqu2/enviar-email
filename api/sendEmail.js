@@ -40,8 +40,8 @@ export default async function sendEmail(req, res) {
 
         body {
             text-align: center;
-            background: linear-gradient(60deg, #0172cf, #5bbab4 100%);
-            min-width: 50rem;
+            background: linear-gradient(180deg, #005aa3, #5bbab4 100%);
+            min-width: 100rem;
             min-height: 99dvh;
         }
 

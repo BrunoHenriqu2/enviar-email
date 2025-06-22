@@ -39,8 +39,6 @@ export default async function sendEmail(req, res) {
         }
 
         body {
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -48,8 +46,7 @@ export default async function sendEmail(req, res) {
             background: linear-gradient(60deg, #0172cf, #5bbab4 100%);
         }
 
-        h1,
-        h2 {
+        h1,h2 {
             font-family: "Sansation";
             color: #005aa3;
         }
@@ -60,11 +57,7 @@ export default async function sendEmail(req, res) {
         }
 
         main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1.5rem;
+            text-align: center;
             border-radius: .25rem;
             width: 60%;
             min-height: 98dvh;
@@ -72,23 +65,16 @@ export default async function sendEmail(req, res) {
         }
 
         img[alt="logo caixa aqui"] {
-            border-radius: 0 1rem 0 1rem;
-            width: calc(164px / 1.15);
-            height: calc(96px / 1.15);
+            width: calc(164px / 1.35);
+            height: calc(96px / 1.35);
         }
 
         img[alt="dream house"] {
-            border-radius: 0 1rem 0 1rem;
-            width: calc(164px / 1.3);
-            height: calc(111px / 1.3);
+            width: calc(164px / 1.4);
+            height: calc(111px / 1.4);
         }
 
         #logos {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 1.2rem;
         }
 
         .line {
@@ -100,17 +86,10 @@ export default async function sendEmail(req, res) {
         }
 
         .question {
-            display: flex;
-            flex-direction: column;
             background-color: #e1e2da;
             border-radius: 1rem;
             text-align: center;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .question h1 {
-            max-width: 90%;
+            min-height: 10rem;
         }
 
         @media (max-width: 950px) {
@@ -130,13 +109,11 @@ export default async function sendEmail(req, res) {
             <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/v1750614868/house_twnenq.jpg" alt="dream house">
         </div>
         <h1>Dados da Solicitação:</h1>
+        <br>
         <div class="question">
-            <h1>Nome</h1>
-            <h2>${name}</h2>
-        </div>
-        <div class="question">
-            <h1>Telefone</h1>
-            <h2>${tel}</h2>
+            <h1>voce tem casa propria?</h1>
+            <br>
+            <h2>Sim</h2>
         </div>
     </main>
 </body>

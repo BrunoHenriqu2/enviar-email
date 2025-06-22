@@ -39,11 +39,9 @@ export default async function sendEmail(req, res) {
         }
 
         body {
-            justify-content: center;
-            align-items: center;
             text-align: center;
-            gap: 1rem;
             background: linear-gradient(60deg, #0172cf, #5bbab4 100%);
+            min-height: 98dvh;
         }
 
         h1,h2 {
@@ -60,27 +58,33 @@ export default async function sendEmail(req, res) {
             text-align: center;
             border-radius: .25rem;
             width: 60%;
-            min-height: 98dvh;
             background-color: #fefff3;
         }
 
         img[alt="logo caixa aqui"] {
+            border-radius: 0 1rem 0 1rem;
             width: calc(164px / 1.35);
             height: calc(96px / 1.35);
         }
 
         img[alt="dream house"] {
+            border-radius: 1rem 0 1rem 0;
             width: calc(164px / 1.4);
             height: calc(111px / 1.4);
         }
 
         #logos {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-direction: row;
+            padding-top: 2rem;
         }
 
         .line {
             width: 2px;
             min-width: 2px;
-            height: 5rem;
+            min-height: 100%;
             border-radius: 1rem;
             background: linear-gradient(180deg, #005aa3, #5bbab4 100%);
         }
@@ -90,6 +94,11 @@ export default async function sendEmail(req, res) {
             border-radius: 1rem;
             text-align: center;
             min-height: 10rem;
+        }
+
+        .question h1 {
+            position: relative;
+            top: 2rem;
         }
 
         @media (max-width: 950px) {
@@ -108,12 +117,16 @@ export default async function sendEmail(req, res) {
             <div class="line"></div>
             <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/v1750614868/house_twnenq.jpg" alt="dream house">
         </div>
+        <br>
         <h1>Dados da Solicitação:</h1>
         <br>
         <div class="question">
-            <h1>voce tem casa propria?</h1>
-            <br>
-            <h2>Sim</h2>
+            <h1>Nome</h1>
+            <h2>${name}</h2>
+        </div>
+        <div class="question">
+            <h1>Telefone</h1>
+            <h2>${tel}</h2>
         </div>
     </main>
 </body>

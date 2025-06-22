@@ -40,10 +40,8 @@ export default async function sendEmail(req, res) {
 
         body {
             text-align: center;
-            background: linear-gradient(180deg, #005aa3, #5bbab4 100%);
-            background-color: #005aa3;
-            min-width: 100rem;
-            min-height: 99dvh;
+            background: linear-gradient(60deg, #0172cf, #5bbab4 100%);
+            min-height: 98dvh;
         }
 
         h1,h2 {
@@ -60,7 +58,7 @@ export default async function sendEmail(req, res) {
         main {
             margin: 0 auto;
             border-radius: .25rem;
-            width: 50rem;
+            width: 60rem;
             background-color: #fefff3;
         }
 
@@ -77,8 +75,8 @@ export default async function sendEmail(req, res) {
         #logos {
             margin: 0 auto;
             padding-top: 1.5rem;
-            width: 17rem;
             height: auto;
+            width: 20rem;
         }
 
         .line {

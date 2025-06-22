@@ -60,7 +60,7 @@ export default async function sendEmail(req, res) {
         main {
             margin: 0 auto;
             border-radius: .25rem;
-            width: 60rem;
+            width: 50rem;
             background-color: #fefff3;
         }
 

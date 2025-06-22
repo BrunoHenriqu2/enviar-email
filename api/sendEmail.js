@@ -76,7 +76,7 @@ export default async function sendEmail(req, res) {
             gap: 1.5rem;
             flex-direction: row;
             padding-top: 1.5rem;
-            max-height: 4rem;
+            height: auto;
         }
 
         .line {
@@ -104,10 +104,10 @@ export default async function sendEmail(req, res) {
 <body>
     <main>
         <div id="logos">
-            <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/h_90,w_100/v1750614861/logo-caixa-aqui_kvv5bg.png"
+            <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/h_80,w_125/v1750614861/logo-caixa-aqui_kvv5bg.png"
                 alt="logo caixa aqui">
             <div class="line"></div>
-            <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/h_90,w_90/v1750614868/house_twnenq.jpg" alt="dream house">
+            <img src="https://res.cloudinary.com/dxyktq9kw/image/upload/h_80,w_110/v1750614868/house_twnenq.jpg" alt="dream house">
         </div>
         <br>
         <h1>Dados da Solicitação:</h1>

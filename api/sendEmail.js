@@ -46,6 +46,7 @@ export default async function sendEmail(req, res) {
 
         h1,h2 {
             font-family: "Sansation";
+            text-align: center;
             color: #005aa3;
         }
 
@@ -55,7 +56,7 @@ export default async function sendEmail(req, res) {
         }
 
         main {
-            float: left;
+            margin: 0 auto;
             text-align: center;
             border-radius: .25rem;
             width: 60%;
@@ -63,28 +64,28 @@ export default async function sendEmail(req, res) {
         }
 
         img[alt="logo caixa aqui"] {
+            display: inline-block;
             border-radius: 0 1rem 0 1rem;
         }
 
         img[alt="dream house"] {
+            display: inline-block;
             border-radius: 1rem 0 1rem 0;
         }
 
         #logos {
-            display: flex;
-            gap: 1.5rem;
-            flex-direction: row;
+            margin: 0 auto;
             padding-top: 1.5rem;
+            width: 100%;
             height: auto;
-            width: 20%;
-            left: 2rem;
-            position: fixed;
         }
 
         .line {
+            display: inline-block;
+            margin: 0 10px 0 10px;
             width: 2px;
             min-width: 2px;
-            min-height: 100%;
+            min-height: 5rem;
             border-radius: 1rem;
             background: linear-gradient(180deg, #005aa3, #5bbab4 100%);
         }
@@ -93,6 +94,8 @@ export default async function sendEmail(req, res) {
             background-color: #e1e2da;
             border-radius: 1rem;
             text-align: center;
+            width: 80%;
+            margin: auto;
         }
 
         @media (max-width: 950px) {

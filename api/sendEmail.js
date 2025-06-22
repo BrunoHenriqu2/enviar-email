@@ -58,7 +58,7 @@ export default async function sendEmail(req, res) {
         main {
             margin: 0 auto;
             border-radius: .25rem;
-            width: 60%;
+            width: 60rem;
             background-color: #fefff3;
         }
 
@@ -75,8 +75,8 @@ export default async function sendEmail(req, res) {
         #logos {
             margin: 0 auto;
             padding-top: 1.5rem;
+            width: 17rem;
             height: auto;
-            width: 25rem;
         }
 
         .line {

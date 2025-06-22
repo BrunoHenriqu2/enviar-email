@@ -76,6 +76,7 @@ export default async function sendEmail(req, res) {
             margin: 0 auto;
             padding-top: 1.5rem;
             height: auto;
+            width: 25rem;
         }
 
         .line {

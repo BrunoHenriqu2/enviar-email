@@ -72,12 +72,13 @@ export default async function sendEmail(req, res) {
 
         #logos {
             display: flex;
-            justify-content: center;
             gap: 1.5rem;
             flex-direction: row;
             padding-top: 1.5rem;
             height: auto;
-            width: 100%;
+            width: 20%;
+            left: 2rem;
+            position: fixed;
         }
 
         .line {
